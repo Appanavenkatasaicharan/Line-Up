@@ -1,0 +1,61 @@
+.date{
+    background-color: rgba(255, 255, 255, 0.193);
+    display: flex;
+    flex-direction: row;
+    padding: 5px; 
+    gap: 10px;
+    align-items: baseline;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px 0 rgba(56, 56, 55, 0.363);
+    position:sticky;
+    top: 0;
+}
+.w1,.w2{
+    display: flex;
+    flex-direction:row;
+    padding: 5px;
+    align-items: baseline;
+    /* justify-content: center; */
+    gap: 10px;
+}
+#day{
+    font-size:90px;
+}
+#mon{
+    font-size: 60px;
+
+}
+#year{
+    font-size: 40px;
+}
+#hours{
+    font-size: 40px;
+}
+#minutes{
+    font-size: 40px;
+}
+#seconds{
+    font-size: 40px;
+}
+.wrapper{
+    display: grid;
+    grid-template-rows: repeat(20,10%);
+    grid-gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+    overflow: scroll;
+}
+.wrapper::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.adder{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+}
+#time-input{
+    width: 20%;
+}

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            Line up
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://cdn.jim-nielsen.com/ios/512/tasks-smart-lists-reminders-2020-06-30.png">
+        <link rel="stylesheet" href="theme.css">
+        <style>
+            .contentarea{
+                background-image: url(https://wallpapercave.com/wp/Y11f7ud.jpg);
+                border-radius: 10px;
+                background-size:cover;
+                background-repeat: no-repeat;
+            }
+            #MyTasks{
+                background-color: white;
+            }
+            #MyTasks>a{
+                color: black;
+            }
+        </style>
+        <link rel="stylesheet" href="tasks.css">
+        <script src="href.js"></script>
+        <script src="tasks.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="topbar">
+                <img src="https://cdn.jim-nielsen.com/ios/512/tasks-smart-lists-reminders-2020-06-30.png" alt="Line up" height="105px" width="105px">
+                <div onclick="openAboutUs()"class="about"><a href="#" class="top">About the creator</a></div>
+                <div onclick="openSignIn()" class="signin"><a href="#" class="top">Sign in</a></div>
+            </div>
+            <div class="navigation">
+                <div onclick="openMyTasks()" id="MyTasks"><a href="#" class="nav">My tasks</a></div>
+                <div onclick="openMySchedule()"><a href="#" class="nav">My schedule</a></div>
+                <div onclick="openMyEvents()"><a href="#" class="nav">My events</a></div>
+            </div>
+            <div class="contentarea">
+                <div class="adder">
+                    <input class="task-input" name="t-input" type="text" placeholder="Enter the task">
+                    <button id="myButton" onclick="addTask()">Add</button>
+                 </div>
+            </div>
+        </div>
+    </body>
+</html>

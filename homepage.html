@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            Line up
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://cdn.jim-nielsen.com/ios/512/tasks-smart-lists-reminders-2020-06-30.png">
+        <link rel="stylesheet" href="theme.css">
+        <script src="href.js"></script>
+        <style>
+            .contentarea{
+                background-image: url(https://images.pexels.com/photos/592077/pexels-photo-592077.jpeg?cs=srgb&dl=pexels-katja-592077.jpg&fm=jpg);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-size:cover;
+                background-repeat: no-repeat;
+            }
+            #intro{
+                width: 90%;
+                height:30%;
+                border-radius: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: xx-large;
+                background: rgba(21, 103, 255, 0.247);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="topbar">
+                <img src="https://cdn.jim-nielsen.com/ios/512/tasks-smart-lists-reminders-2020-06-30.png" id="logo" alt="Line up" height="105px" width="105px">
+                <div onclick="openAboutUs()"class="about"><a href="#" class="top">About the creator</a></div>
+                <div onclick="openSignIn()" class="signin"><a href="#" class="top">Sign in</a></div>
+            </div>
+            <div class="navigation">
+                <div onclick="openMyTasks()"><a href="#" class="nav">My tasks</a></div>
+                <div onclick="openMySchedule()"><a href="#" class="nav">My schedule</a></div>
+                <div onclick="openMyEvents()"><a href="#" class="nav">My events</a></div>
+            </div>
+            <div class="contentarea">
+                <div id="intro">
+                    Welcome to Line up<br>
+                    Sign in with your account to get started.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

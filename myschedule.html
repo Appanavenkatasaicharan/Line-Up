@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            Line up
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://cdn.jim-nielsen.com/ios/512/tasks-smart-lists-reminders-2020-06-30.png">
+        <link rel="stylesheet" href="theme.css">
+        <link rel="stylesheet" href="dateandtime.css">
+        <style>
+            .contentarea{
+                border-radius: 10px;
+                background-image: url(https://wallpaperaccess.com/full/626576.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 10px;
+            }
+            #MySchedule{
+                background-color: white;
+            }
+            #MySchedule>a{
+                color: black;
+            }
+        </style>
+        <script src="href.js"></script>
+        <script src="schedule.js"></script>
+        
+    </head>
+    <body onload="displayDate()">
+        <div class="container">
+            <div class="topbar">
+                <img src="https://cdn.jim-nielsen.com/ios/512/tasks-smart-lists-reminders-2020-06-30.png" alt="Line up" height="105px" width="105px">
+                <div onclick="openAboutUs()"class="about"><a href="#" class="top">About the creator</a></div>
+                <div onclick="openSignIn()" class="signin"><a href="#" class="top">Sign in</a></div>
+            </div>
+            <div class="navigation">
+                <div onclick="openMyTasks()"><a href="#" class="nav">My tasks</a></div>
+                <div onclick="openMySchedule()" id="MySchedule"><a href="#" class="nav">My schedule</a></div>
+                <div onclick="openMyEvents()"><a href="#" class="nav">My events</a></div>
+            </div>
+            <div class="contentarea">
+                <div class="date">
+                    <div class="w1">
+                    <div id="day"></div>
+                    <div id="mon"></div>
+                    <div id="year"></div>
+                    </div>
+                    <div class="w2">
+                    <div id="hours"></div>
+                    <div id="minutes"></div>
+                    <div id="seconds"></div>
+                    </div>
+                </div>  
+                <div style="color: rgb(255, 255, 255);font-size: larger;">Plan out your tasks for the day. (These tasks get refreshed everyday)</div>
+                <div class="wrapper">
+                    <div class="adder">
+                        <input type="time" id="time-input">
+                        <input type="text" id="task-input" placeholder="Enter the task">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
